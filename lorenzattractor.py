@@ -36,5 +36,6 @@ def plot(xs, ys, zs):
     # Show plot to user
     plt.show()
 
-la_data = lorenzattractor()
-plot(*la_data)
+def main():
+    la_data = lorenzattractor()
+    plot(*la_data)
