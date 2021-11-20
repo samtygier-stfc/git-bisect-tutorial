@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import matplotlib.pyplot as plt
 
+# set up varaibles
 nsteps = 10000
 dt = 0.01
 
@@ -18,10 +19,13 @@ for i in range(nsteps):
     ys.append(y + ((28*x - y - x*z) * dt))
     zs.append(z + ((x*y - 2.667*z) * dt))
 
+# Plot on 3D projection
 ax = plt.figure().add_subplot(projection='3d')
 ax.plot(xs, ys, zs, lw=0.5)
 ax.set_xlabel("X Axis")
 ax.set_ylabel("Y Axis")
 ax.set_zlabel("Z Axis")
 ax.set_title("Lorenz Attractor")
+
+# Show plot to user
 plt.show()
