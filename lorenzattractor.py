@@ -39,3 +39,6 @@ def plot(xs, ys, zs):
 def main():
     la_data = lorenzattractor()
     plot(*la_data)
+
+if __name__ == "__main__":
+    main()
