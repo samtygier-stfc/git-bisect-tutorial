@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import matplotlib.pyplot as plt
 
-# set up varaibles
+# set up variables
 nsteps = 10000
 dt = 0.01
 
@@ -14,7 +14,7 @@ for i in range(nsteps):
     # get current
     x, y, z = xs[i], ys[i], zs[i]
 
-    # caclulate new
+    # calculate new
     xs.append(x + ((10*(y - x)) * dt))
     ys.append(y + ((28*x - y - x*z) * dt))
     zs.append(z + ((x*y - 2.667*z) * dt))
