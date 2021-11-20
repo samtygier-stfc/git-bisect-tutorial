@@ -1,24 +1,28 @@
 #!/usr/bin/env python3
 import matplotlib.pyplot as plt
 
-# set up variables
-nsteps = 10000
-dt = 0.01
+def lorenzattractor():
+    # set up variables
+    nsteps = 10000
+    dt = 0.01
 
-# Initial values
-xs = [0]
-ys = [1]
-zs = [1.05]
+    # Initial values
+    xs = [0]
+    ys = [1]
+    zs = [1.05]
 
-for i in range(nsteps):
-    # get current
-    x, y, z = xs[i], ys[i], zs[i]
+    for i in range(nsteps):
+        # get current
+        x, y, z = xs[i], ys[i], zs[i]
 
-    # calculate new
-    xs.append(x + ((10*(y - x)) * dt))
-    ys.append(y + ((28*x - y - x*z) * dt))
-    zs.append(z + ((x*y - 2.667*z) * dt))
+        # calculate new
+        xs.append(x + ((10*(y - x)) * dt))
+        ys.append(y + ((28*x - y - x*z) * dt))
+        zs.append(z + ((x*y - 2.667*z) * dt))
 
+    return xs, ys, zs
+
+xs, ys, zs = lorenzattractor()
 # Plot on 3D projection
 ax = plt.figure().add_subplot(projection='3d')
 ax.plot(xs, ys, zs, lw=0.5)
