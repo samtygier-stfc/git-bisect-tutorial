@@ -6,7 +6,8 @@ xs = [0]
 ys = [1]
 zs = [1.05]
 
-for i in range(10000):
+nsteps = 10000
+for i in range(nsteps):
     # get current
     x, y, z = xs[i], ys[i], zs[i]
 
