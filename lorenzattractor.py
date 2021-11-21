@@ -12,10 +12,7 @@ def lorenzattractor(nsteps=10000, dt=0.01):
         # get current
         x, y, z = xs[i], ys[i], zs[i]
 
-        # calculate velocity
-        xp = 10 * (y - x)
-        yp = (28 * x - y - x * z)
-        zp = (x * y * 2.667 * z)
+        xp, yp, zp = calc_velocity(x, y, z)
 
         # calculate new
         xs.append(x + (xp * dt))
@@ -23,6 +20,13 @@ def lorenzattractor(nsteps=10000, dt=0.01):
         zs.append(z + (zp * dt))
 
     return xs, ys, zs
+
+
+def calculate_velocity(x, y, z):
+    xp = 10 * (y - x)
+    yp = (28 * x - y - x * z)
+    zp = (x * y * 2.667 * z)
+    return xp, yp, zp
 
 
 def plot(xs, ys, zs):
