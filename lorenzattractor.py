@@ -9,13 +9,13 @@ def calculate_velocity(x, y, z, a=10, b=28, c=2.667):
 
     return xp, yp, zp
 
-def lorenzattractor(nsteps=10000, dt=0.01):
+def lorenzattractor(n_steps=10000, dt=0.01):
     # Initial values
     xs = [0]
     ys = [1]
     zs = [1.05]
 
-    for i in range(nsteps):
+    for i in range(n_steps):
         # get current
         x, y, z = xs[i], ys[i], zs[i]
 
