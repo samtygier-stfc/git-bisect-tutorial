@@ -32,6 +32,7 @@ def plot(xs, ys, zs):
     ax.set_ylabel("Y Axis")
     ax.set_zlabel("Z Axis")
     ax.set_title("Lorenz Attractor")
+    plt.tight_layout()
 
     # Show plot to user
     plt.show()
