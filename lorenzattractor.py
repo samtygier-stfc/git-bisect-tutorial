@@ -13,7 +13,7 @@ def lorenzattractor(nsteps = 10000, dt = 0.01):
         x, y, z = xs[i], ys[i], zs[i]
 
         # calculate new
-        xs.append(x + ((10*(y - x)) * dt))
+        xs.append(x + (10*(y - x) * dt))
         ys.append(y + ((28*x - y - x*z) * dt))
         zs.append(z + ((x*y - 2.667*z) * dt))
 
