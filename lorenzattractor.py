@@ -16,8 +16,8 @@ def calculate_velocity(x, y, z, a=10, b=28, c=2.667):
 
 def lorenzattractor(n_steps=10000, dt=0.01):
     # Initial values
-    xs = [0]
-    ys = [1]
+    xs = [0.0]
+    ys = [1.0]
     zs = [1.05]
 
     for i in range(n_steps):
