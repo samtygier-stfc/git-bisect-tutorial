@@ -2,6 +2,13 @@
 import matplotlib.pyplot as plt
 
 
+def calculate_velocity(x, y, z):
+   xp = 10 * (y - x)
+   yp = (28 * x - y - x * z)
+   zp = (x * y * 2.667 * z)
+
+    return xp, yp, zp
+
 def lorenzattractor(nsteps=10000, dt=0.01):
     # Initial values
     xs = [0]
@@ -21,12 +28,6 @@ def lorenzattractor(nsteps=10000, dt=0.01):
 
     return xs, ys, zs
 
-
-def calculate_velocity(x, y, z):
-    xp = 10 * (y - x)
-    yp = (28 * x - y - x * z)
-    zp = (x * y * 2.667 * z)
-    return xp, yp, zp
 
 
 def plot(xs, ys, zs):
