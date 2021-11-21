@@ -41,7 +41,7 @@ def plot(xs, ys, zs):
 
 
 def main():
-    la_data = lorenzattractor()
+    la_data = lorenzattractor(10000, 0.01)
     plot(*la_data)
 
 
