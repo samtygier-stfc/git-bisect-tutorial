@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 
 
 def calculate_velocity(x, y, z):
-   xp = 10 * (y - x)
-   yp = (28 * x - y - x * z)
-   zp = (x * y * 2.667 * z)
+    xp = 10 * (y - x)
+    yp = (28 * x - y - x * z)
+    zp = (x * y * 2.667 * z)
 
     return xp, yp, zp
 
