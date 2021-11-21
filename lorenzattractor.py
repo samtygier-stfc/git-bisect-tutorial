@@ -33,8 +33,8 @@ def lorenzattractor(n_steps=10000, dt=0.01):
 def plot(xs, ys, zs):
     xs, ys, zs = lorenzattractor()
     # Plot on 3D projection
-    ax = plt.figure().add_subplot(projection='3d', color="red")
-    ax.plot(xs, ys, zs, lw=0.5)
+    ax = plt.figure().add_subplot(projection='3d')
+    ax.plot(xs, ys, zs, lw=0.5, color="red")
     ax.set_xlabel("X Axis")
     ax.set_ylabel("Y Axis")
     ax.set_zlabel("Z Axis")
