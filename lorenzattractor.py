@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
 import matplotlib.pyplot as plt
 
-def lorenzattractor():
-    # set up variables
-    nsteps = 10000
-    dt = 0.01
-
+def lorenzattractor(nsteps = 10000, dt = 0.01):
     # Initial values
     xs = [0]
     ys = [1]
