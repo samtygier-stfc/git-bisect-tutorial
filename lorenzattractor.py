@@ -50,8 +50,8 @@ def plot(xs, ys, zs):
 
 
 def main():
-    la_data = lorenzattractor(10000, 0.01)
-    plot(*la_data)
+    la_result = lorenzattractor(10000, 0.01)
+    plot(*la_result)
 
 
 if __name__ == "__main__":
