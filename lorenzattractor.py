@@ -27,9 +27,9 @@ def lorenzattractor(n_steps=10000, dt=0.01):
         xp, yp, zp = calculate_velocity(x, y, z)
 
         # calculate new
-        xs.append(x + (xp * dt))
-        ys.append(y + (yp * dt))
-        zs.append(z + (zp * dt))
+        xs.append(x + xp * dt))
+        ys.append(y + yp * dt)
+        zs.append(z + zp * dt)
 
     return xs, ys, zs
 
