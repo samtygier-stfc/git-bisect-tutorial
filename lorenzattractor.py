@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import matplotlib.pyplot as plt
 
 
@@ -8,6 +9,7 @@ def calculate_velocity(x, y, z, a=10, b=28, c=2.667):
     zp = (x * y * c * z)
 
     return xp, yp, zp
+
 
 def lorenzattractor(n_steps=10000, dt=0.01):
     # Initial values
@@ -27,7 +29,6 @@ def lorenzattractor(n_steps=10000, dt=0.01):
         zs.append(z + (zp * dt))
 
     return xs, ys, zs
-
 
 
 def plot(xs, ys, zs):
