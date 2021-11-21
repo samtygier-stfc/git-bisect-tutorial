@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 
 def calculate_velocity(x, y, z, a=10, b=28, c=2.667):
     xp = a * (y - x)
-    yp = (b * x - y - x * z)
-    zp = (x * y * c * z)
+    yp = b * x - y - x * z
+    zp = x * y * c * z
 
     return xp, yp, zp
 
