@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import matplotlib.pyplot as plt
 
+
 def lorenzattractor(nsteps = 10000, dt = 0.01):
     # Initial values
     xs = [0]
@@ -33,9 +34,11 @@ def plot(xs, ys, zs):
     # Show plot to user
     plt.show()
 
+
 def main():
     la_data = lorenzattractor()
     plot(*la_data)
+
 
 if __name__ == "__main__":
     main()
